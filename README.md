@@ -34,6 +34,16 @@ Docker Compose installation options.
 
 (Used only for RedHat/CentOS.) You can enable the Edge or Test repo by setting the respective vars to `1`.
 
+### Daemon Configuration
+
+You can customize daemon configuration by creating a YAML structure of options under `docker_daemon_config`. For a list of available options, check the [dockerd docs](https://docs.docker.com/engine/reference/commandline/dockerd/#daemon-configuration-file). By default, it is set to configure devicemapper storage with direct-lvm for CentOS.
+
+    docker_configure_daemon_deb: false
+    docker_configure_daemon_rh: true
+
+Set to true if the configuration should be used for Debian/Ubuntu or RHEL/CentOS hosts, respectively.
+
+
 ## Dependencies
 
 None.
