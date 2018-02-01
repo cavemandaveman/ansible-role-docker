@@ -1,7 +1,5 @@
 # Ansible Role: Docker
 
-[![Build Status](https://travis-ci.org/geerlingguy/ansible-role-docker.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-docker)
-
 An Ansible Role that installs [Docker](https://www.docker.com) on Linux.
 
 ## Requirements
@@ -36,22 +34,6 @@ Docker Compose installation options.
 
 (Used only for RedHat/CentOS.) You can enable the Edge or Test repo by setting the respective vars to `1`.
 
-## Use with Ansible (and `docker` Python library)
-
-Many users of this role wish to also use Ansible to then _build_ Docker images and manage Docker containers on the server where Docker is installed. In this case, you can easily add in the `docker` Python library using the `geerlingguy.pip` role:
-
-```yaml
-- hosts: all
-
-  vars:
-    pip_install_packages:
-      - name: docker
-
-  roles:
-    - geerlingguy.pip
-    - geerlingguy.docker
-```
-
 ## Dependencies
 
 None.
@@ -61,13 +43,13 @@ None.
 ```yaml
 - hosts: all
   roles:
-    - geerlingguy.docker
+    - cavemandaveman.docker
 ```
 
 ## License
 
-MIT / BSD
+GPLv3
 
 ## Author Information
 
-This role was created in 2017 by [Jeff Geerling](https://www.jeffgeerling.com/), author of [Ansible for DevOps](https://www.ansiblefordevops.com/).
+This role was created in 2018 by cavemandaveman.

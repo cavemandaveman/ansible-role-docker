@@ -1,11 +1,7 @@
----
-dependencies: []
-
 galaxy_info:
-  author: geerlingguy
+  author: cavemandaveman
   description: Docker for Linux.
-  company: "Midwestern Mac, LLC"
-  license: "license (BSD, MIT)"
+  license: GPLv3
   min_ansible_version: 2.0
   platforms:
   - name: EL
@@ -27,3 +23,5 @@ galaxy_info:
     - orchestration
     - compose
     - server
+
+dependencies: []
